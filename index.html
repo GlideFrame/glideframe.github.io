@@ -1,226 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slash - Motion Graphics Editor</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-
-        body {
-            min-height: 100vh;
-            background: linear-gradient(135deg, #4169E1 0%, #9370DB 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 24px;
-            padding: 40px;
-            width: 100%;
-            max-width: 800px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .profile img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .profile h1 {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .profile p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .social-links a {
-            color: #666;
-            font-size: 1.5em;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: #4169E1;
-        }
-
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            padding: 12px 24px;
-            border-radius: 50px;
-            background: #4169E1;
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: transform 0.3s, background 0.3s;
-            flex: 1 1 auto;
-            justify-content: center;
-            min-width: 200px;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            background: #3258d6;
-        }
-
-        .btn i {
-            font-size: 1.2em;
-        }
-
-        .footer {
-            text-align: center;
-            color: #666;
-            font-size: 0.9em;
-        }
-
-        .bottom-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        .bottom-icons a {
-            color: #666;
-            font-size: 1.2em;
-            background: #f5f5f5;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .made-with {
-            text-align: center;
-            color: #999;
-            font-size: 0.8em;
-            margin-top: 20px;
-        }
-
-        @media (max-width: 600px) {
-            .card {
-                padding: 20px;
-            }
-
-            .buttons {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-            }
-
-            .btn {
-                min-width: unset;
-                width: 100%;
-                padding: 10px 15px;
-                font-size: 0.9em;
-            }
-
-            .profile h1 {
-                font-size: 2em;
-            }
-
-            .profile p {
-                font-size: 0.9em;
-                padding: 0 20px;
-            }
-        }
-    </style>
-</head>
-<body>
+    <link type="text/css" rel="stylesheet" href="assets\css\index.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <!-- <nav class="upper_nav">
+        <li class="logo">
+          <h3>1372Slash</h3>
+        </li>
+        <ul class="nav-menu">
+          <li class="nav_active_2" onclick="window.location.href='index.html'">
+            <span class="material-symbols-rounded">
+              <i style="margin-bottom: 4px" class="fa-light fa-house"></i>
+            </span>
+            &nbsp;
+            <a href="#">Beranda</a>
+          </li>
+          <li onclick="window.location.href='layouts/course.html'">
+            <span class="material-symbols-rounded">
+              <i class="fa-light fa-book"></i>
+            </span>
+            &nbsp;
+            <a href="#">Kursus</a>
+          </li>
+          <li onclick="window.location.href='layouts/exercise.html'">
+            <span class="material-symbols-rounded">
+              <i class="fa-light fa-pen-to-square"></i>
+            </span>
+            &nbsp;
+            <a href="#">Latihan</a>
+          </li>
+          <li onclick="window.location.href='layouts/social.html'">
+            <span class="material-symbols-rounded">
+              <i class="fa-light fa-users"></i>
+            </span>
+            &nbsp;
+            <a href="#">Sosial</a>
+          </li>
+          <li onclick="window.location.href='layouts/login.html'">
+            <md-icon-button
+              style="margin-top: 0px; padding: -100px"
+              id="mode-toggle-dekstop"
+            >
+              <img
+                src="https://th.bing.com/th/id/OIP.3LeSnqLr6db8G2hQd6jXcAAAAA?rs=1&pid=ImgDetMain"
+                alt="Avatar"
+                class="avatar"
+              />
+            </md-icon-button>
+          </li>
+        </ul>
+      </nav>
+      <nav class="btm_nav">
+        <ul>
+          <li onclick="window.location.href='index.html'">
+            <a href="#" class="nav_active">
+              <span class="material-symbols-rounded">
+                <i class="fa-light fa-house"></i>
+              </span>
+              <span class="nav_text">Beranda</span>
+            </a>
+          </li>
+          <li onclick="window.location.href='layouts/course.html'">
+            <a href="#">
+              <span class="material-symbols-rounded">
+                <i class="fa-light fa-book"></i>
+              </span>
+              <span class="nav_text">Kursus</span>
+            </a>
+          </li>
+          <li onclick="window.location.href='layouts/exercise.html'">
+            <a href="#">
+              <span class="material-symbols-rounded">
+                <i class="fa-light fa-pen-to-square"></i>
+              </span>
+              <span class="nav_text">Latihan</span>
+            </a>
+          </li>
+          <li onclick="window.location.href='layouts/social.html'" id="activated">
+            <a href="#">
+              <span class="material-symbols-rounded">
+                <i class="fa-light fa-users"></i>
+              </span>
+              <span class="nav_text">Sosial</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    -->
+    <!-- END OF NAV -->
     <div class="card">
-        <div class="profile">
-            <img src="/api/placeholder/100/100" alt="Slash Logo">
-            <h1>Slash</h1>
-            <p>Motion Graphics Editor and YouTuber. Every day learn new thoughts</p>
-        </div>
-        
-        <div class="social-links">
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fas fa-globe"></i></a>
-        </div>
+      <div class="profile">
+        <img src="assets\images\Slash_Profile.png" alt="Slash Logo" />
+        <h1 class="herofont">/Slash</h1>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fas fa-globe"></i></a>
+      </div>
+      <div class="profile">
+        <p>Motion Graphics Editor and YouTuber. Every day learn new thoughts</p>
+      </div>
+      <div class="buttons">
+        <a href="#" class="btn">
+            About Us
+            <i class="fal fa-chevron-right"></i>
+        </a>
+        <a href="#" class="btn">
+            Portfolio (Forlio)
+            <i class="fal fa-folder-open"></i>
+        </a>
+        <a href="#" class="btn">
+            Open Commission
+            <i class="fal fa-chevron-right"></i>
+        </a>
+        <a href="#" class="btn">
+            Our Shop
+            <i class="fal fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="btn">
+            Donate
+            <i class="fal fa-star"></i>
+        </a>
+        <a href="#" class="btn">
+            Collaborate with Us
+            <i class="fab fa-instagram"></i>
+        </a>
+      </div>
 
-        <div class="buttons">
-            <a href="#" class="btn">
-                <i class="fas fa-user"></i>
-                About Us
-            </a>
-            <a href="#" class="btn">
-                <i class="fas fa-folder"></i>
-                Portfolio (Forlio)
-            </a>
-            <a href="#" class="btn">
-                <i class="fas fa-handshake"></i>
-                Open Commission
-            </a>
-            <a href="#" class="btn">
-                <i class="fas fa-shop"></i>
-                Our Shop
-            </a>
-            <a href="#" class="btn">
-                <i class="fas fa-star"></i>
-                Donate
-            </a>
-            <a href="#" class="btn">
-                <i class="fab fa-instagram"></i>
-                Collaborate with Us
-            </a>
-        </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-bluesky"></i></a>
+      </div>
 
-        <div class="bottom-icons">
-            <a href="#"><i class="fab fa-pinterest"></i></a>
-            <a href="#"><i class="fas fa-circle"></i></a>
-            <a href="#"><i class="fas fa-butterfly"></i></a>
-        </div>
-
-        <div class="footer">
-            <p>Website ini menggunakan Bahasa Inggris. Gunakan fitur dalam browser kamu untuk melakukan translate</p>
-        </div>
-
-        <div class="made-with">
-            Made with Carrd
-        </div>
+      <div class="footer">
+        <p>
+          Website ini menggunakan Bahasa Inggris. Gunakan fitur dalam browser
+          kamu untuk melakukan translate
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
