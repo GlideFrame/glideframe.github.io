@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+body {
+  min-height: 100vh;
+  background-image: url("https://i.ibb.co.com/yfZHQjg/1-BANNER-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: "Parkinsans", serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: hidden;
+}
+div {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: "Parkinsans", serif;
+  color: white;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  align-content: center;
+}
+div img {
+  width: 20%;
+}
