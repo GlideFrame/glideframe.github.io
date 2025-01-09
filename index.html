@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slash - Motion Graphics Editor</title>
-    <link type="text/css" rel="stylesheet" href="assets\css\index.css" />
-    <link rel="stylesheet"href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"/>
-    <meta http-equiv="refresh" content="0; url=layouts/wip.html">
-    <script type="text/javascript">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slash - Motion Graphics Editor</title>
+  <link type="text/css" rel="stylesheet" href="assets\css\index.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" />
+  <link type="icon" href="assets\images\slash.png">
+  <script type="text/javascript">
+    function checkTime() {
+      var currentTime = new Date();
+      var hours = currentTime.getHours();
+      console.log(hours);
+      console.log(hours >= 6 && hours <= 18);
+
+      if (hours >= 6 && hours <= 18) {
         window.location.href = "layouts/wip.html";
-    </script>
-  <body>
-    <div class="card">
-      <div class="profile">
-        <img src="assets\images\Slash_Profile.png" alt="Slash Logo" />
-        <h1 class="herofont">/Slash</h1>
-      </div>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="#"><i class="fas fa-globe"></i></a>
-      </div>
-      <div class="profile">
-        <p>Motion Graphics Editor and YouTuber. Every day learn new thoughts</p>
-      </div>
-      <div class="buttons">
-        <a href="#" class="btn">
-            About Us
-            <i class="fal fa-chevron-right"></i>
-        </a>
-        <a href="#" class="btn">
-            Portfolio (Forlio)
-            <i class="fal fa-folder-open"></i>
-        </a>
-        <a href="#" class="btn">
-            Open Commission
-            <i class="fal fa-chevron-right"></i>
-        </a>
-        <a href="#" class="btn">
-            Our Shop
-            <i class="fal fa-cart-shopping"></i>
-        </a>
-        <a href="#" class="btn">
-            Donate
-            <i class="fal fa-star"></i>
-        </a>
-        <a href="#" class="btn">
-            Collaborate with Us
-            <i class="fab fa-instagram"></i>
-        </a>
-      </div>
+      }
+    }
+    window.onload = checkTime;
+  </script>
+</head>
 
-      <div class="social-links">
-        <a href="#"><i class="fab fa-pinterest"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-bluesky"></i></a>
-      </div>
-
-      <div class="footer">
-        <p>
-          Website ini menggunakan Bahasa Inggris. Gunakan fitur dalam browser
-          kamu untuk melakukan translate
-        </p>
-      </div>
+<body>
+  <div class="card">
+    <div class="profile">
+      <img src="assets\images\slash_long.png" alt="Slash Logo" />
     </div>
-  </body>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fas fa-globe"></i></a>
+    </div>
+    <div class="profile">
+      <p>Motion Graphics Editor and YouTuber. Every day learn new thoughts</p>
+    </div>
+    <div class="buttons">
+      <a href="#" class="btn">
+        About Us
+        <i class="fal fa-chevron-right"></i>
+      </a>
+      <a href="#" class="btn">
+        Portfolio (Forlio)
+        <i class="fal fa-folder-open"></i>
+      </a>
+      <a href="#" class="btn">
+        Open Commission
+        <i class="fal fa-chevron-right"></i>
+      </a>
+      <a href="#" class="btn">
+        Our Shop
+        <i class="fal fa-cart-shopping"></i>
+      </a>
+      <a href="#" class="btn">
+        Donate
+        <i class="fal fa-star"></i>
+      </a>
+      <a href="#" class="btn">
+        Collaborate with Us
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <div class="social-links">
+      <a href="#"><i class="fab fa-pinterest"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-bluesky"></i></a>
+    </div>
+
+    <div class="footer">
+      <p>
+        Website ini menggunakan Bahasa Inggris. Gunakan fitur dalam browser
+        kamu untuk melakukan translate
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>

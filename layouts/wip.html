@@ -5,6 +5,19 @@
   <title>Slash - Motion Graphics</title>
   <link type="text/css" rel="stylesheet" href="..\assets\css\wip.css">
   <link type="icon" href="..\assets\images\slash.png">
+  <script type="text/javascript">
+    function checkTime() {
+      var currentTime = new Date();
+      var hours = currentTime.getHours();
+      console.log(hours);
+      console.log(hours <= 6 || hours >= 18);
+
+      if (hours <= 6 || hours >= 18) {
+        window.location.href = "../index.html";
+      }
+    }
+    window.onload = checkTime;
+  </script>
 </head>
 <body>
   <div>
@@ -15,8 +28,8 @@
     <h3>
       We Are Here
     </h3>
-    <p href="..\index.html">
-      Website work on progress <br /> Please be patient or just break the code
+    <p onclick="window.location.href = '../index.html';">
+      Website work on progress <br /> Please be patient or you can <i>just break the code</i> or <b>waiting for the night</b>
     </p>
   </div>
 </body>
